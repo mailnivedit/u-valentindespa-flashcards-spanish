@@ -1,0 +1,8 @@
+---
+description: Propose writing new tests for new functionality
+alwaysApply: true
+---
+
+# Propose New Tests
+
+Once you are done making changes, proactively ask the user if you should also write new tests to cover a new functionality.

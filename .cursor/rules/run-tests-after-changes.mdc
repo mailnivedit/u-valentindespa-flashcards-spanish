@@ -1,0 +1,8 @@
+---
+description: Always run tests after making changes
+alwaysApply: true
+---
+
+# Run Tests After Changes
+
+Once you are done making changes to the codebase, run all the tests and ensure they pass.

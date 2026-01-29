@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div style={{ padding: '2rem', textAlign: 'center' }}>
       <h1>Spanish Flashcards</h1>
-      <p>Welcome! Choose a mode to start learning.</p>
+      <p>Choose a mode to start learning.</p>
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '300px', margin: '2rem auto' }}>
         <Link to="/study">
