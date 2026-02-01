@@ -1,9 +1,13 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { flashcards } from '../data/flashcards';
 
-// Extract unique categories from the flashcards data
+// Extract unique categories from the flashcards data to dynamically generate buttons
 const categories = Array.from(new Set(flashcards.map(card => card.category)));
 
+/**
+ * Page component that allows users to select a category for Study or Quiz mode.
+ * The mode is determined by the URL path.
+ */
 export default function CategorySelectionPage() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -12,6 +16,10 @@ export default function CategorySelectionPage() {
   // If the component is used at "/study", mode is "study"
   const mode = location.pathname.includes('quiz') ? 'quiz' : 'study';
 
+  /**
+   * Navigates to the selected category within the current mode.
+   * @param category - The selected category string
+   */
   const handleCategoryClick = (category: string) => {
     navigate(`/${mode}/${category}`);
   };

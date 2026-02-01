@@ -1,3 +1,6 @@
+/**
+ * Represents a single flashcard with Spanish/English translation and quiz data.
+ */
 export interface Flashcard {
   id: string;
   category: 'animals' | 'food' | 'verbs';
@@ -9,6 +12,10 @@ export interface Flashcard {
   };
 }
 
+/**
+ * Static list of flashcards used throughout the application.
+ * grouped by categories: animals, food, verbs.
+ */
 export const flashcards: Flashcard[] = [
   // Animals
   {
