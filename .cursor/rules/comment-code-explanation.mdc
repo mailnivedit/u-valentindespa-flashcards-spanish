@@ -1,0 +1,42 @@
+---
+description: Ensure key parts of the code have comments explaining what the code does
+alwaysApply: true
+---
+
+# Commenting Standards
+
+Key parts of the code must have comments explaining the "why" and "what".
+
+## Guidelines
+
+- **Classes and Functions**: Add a brief comment describing the purpose.
+- **Complex Logic**: Explain complex algorithms or non-obvious logic.
+- **Public Interfaces**: Document public methods and properties.
+- **"Why" over "What"**: Focus on explaining *why* code is doing something, rather than just restating the code.
+
+## Examples
+
+```javascript
+// ❌ BAD
+const t = x * 0.15;
+
+// ✅ GOOD
+// Calculate tax based on the standard rate of 15%
+const tax = income * 0.15;
+```
+
+```javascript
+// ❌ BAD
+function p(d) {
+  // ...
+}
+
+// ✅ GOOD
+/**
+ * Processes the user data and updates the database.
+ * @param data - The user input data
+ */
+function processUserData(data) {
+  // ...
+}
+```
