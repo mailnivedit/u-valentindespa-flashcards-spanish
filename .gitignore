@@ -26,3 +26,6 @@ dist-ssr
 # Playwright
 test-results/
 playwright-report/
+
+# Cursor — local MCP config (may contain API keys / machine-specific paths)
+.cursor/mcp.json
