@@ -6,6 +6,10 @@ Front-end flashcard app with study mode, category selection, and Playwright E2E 
 
 **Workflow:** After code changes, run `npm run test:e2e`. For new features, add or extend tests in `tests/` — see [`docs/development-workflow.md`](docs/development-workflow.md) and `.cursor/rules/`.
 
+**Handoff for new chats:** [`docs/SESSION.md`](docs/SESSION.md) (Cursor chats are not stored as files in this repo).
+
+**Changelog:** [`CHANGELOG.md`](CHANGELOG.md).
+
 ---
 
 ## React + TypeScript + Vite (template notes)
