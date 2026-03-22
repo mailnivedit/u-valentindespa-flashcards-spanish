@@ -15,11 +15,24 @@
 - **Phase 2:** Category selection, `Study` flow with flip + Right/Wrong, session complete, wrong IDs tracked in state.
 - **E2E:** `tests/e2e.spec.ts` — home smoke + full animals study session.
 - **Refactor:** Comments/JSDoc on core files; `Study` split into smaller UI pieces.
-- **Workflow:** `docs/development-workflow.md`, `npm run test:e2e` / `test:e2e:ui`, README top section; `.cursor/rules` cross-linked to commands and examples.
+- **Workflow:** `docs/development-workflow.md`, `npm run test:e2e` / `npm run test:e2e:ui`, README top section; `.cursor/rules` cross-linked to commands and examples.
+- **Docs:** Root [`CHANGELOG.md`](../CHANGELOG.md) and this file for handoff; README links to both.
+- **Git:** `.cursor/mcp.json` is **gitignored** (local MCP config; may contain tokens — do not commit).
+
+## GitHub issues (optional tracking)
+
+Issues can be created via **GitHub MCP** in Cursor (`issue_write`, server `user-github` in this environment). Examples from this project thread:
+
+| Issue | Title (summary) |
+|-------|------------------|
+| [#1](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/1) | Test |
+| [#2](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/2) | [Phase 3] Redo Wrong Cards button — first unresolved TODO item |
+
+Use issues to track **Phase 3+** work alongside `docs/downloaded_resource/TODO.md`.
 
 ## Not implemented yet (per TODO)
 
-- Phase 3: Redo wrong cards  
+- Phase 3: Redo wrong cards (GitHub: [#2](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/2) aligns with first unchecked item)  
 - Phase 4: Quiz MCQ / FIB  
 - Phase 5: Stats + persistence  
 
@@ -36,15 +49,15 @@ npm run test:e2e
 ## New chat prompt (paste this)
 
 ```
-Continue the Spanish Flashcards app in this repo. Read docs/SESSION.md, docs/downloaded_resource/TODO.md, and README.md. Follow .cursor/rules. Run npm run test:e2e after code changes. Next priority: [Phase 3 redo / Phase 4 quiz / your choice].
+Continue the Spanish Flashcards app in this repo. Read docs/SESSION.md, CHANGELOG.md, docs/downloaded_resource/TODO.md, and README.md. Follow .cursor/rules. Run npm run test:e2e after code changes. Next priority: Phase 3 redo (see GitHub issue #2) or continue from TODO.
 ```
 
 ## Note on “chat files”
 
-Chats are **not** stored as a folder inside the repo. Project-only AI config lives under **`.cursor/rules/`**. Full conversation history is in **Cursor’s app data**; use **`docs/SESSION.md`** (this file) for a git-tracked handoff.
+Chats are **not** stored as a folder inside the repo. Project-only AI config lives under **`.cursor/rules/`** (and local MCP under **`.cursor/mcp.json`**, ignored by git). Full conversation history is in **Cursor’s app data**; use **`docs/SESSION.md`** (this file) for a git-tracked handoff.
 
 **Human-readable release-style notes:** see root [`CHANGELOG.md`](../CHANGELOG.md).
 
 ---
 
-*Last updated from session covering Phases 1–2, E2E, refactor, rules alignment, and push to GitHub.*
+*Last updated: SESSION + CHANGELOG refreshed for MCP/GitHub issues, `.cursor/mcp.json` gitignore, and handoff links.*

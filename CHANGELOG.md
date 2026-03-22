@@ -16,15 +16,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Spanish Flashcards app: Vite + React + TypeScript, routing, static flashcard data (`src/data/flashcards.ts`)
 - Study mode: category selection, flip cards, Right/Wrong, session complete, wrong-answer IDs in state
 - `.cursor/rules` updates with links to example files and `npm run test:e2e`
+- **GitHub issues** (optional): e.g. [#1](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/1) (smoke test issue), [#2](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/2) (Phase 3 — first unresolved TODO: Redo Wrong Cards button); can be created/managed via **GitHub MCP** in Cursor
 
 ### Changed
 
-- README: project description, scripts, workflow links, pointer to `docs/SESSION.md`
+- README: project description, scripts, workflow links, pointers to `docs/SESSION.md` and `CHANGELOG.md`
 - Refactor: JSDoc/comments on core pages and components; `Study` split into clearer subcomponents
+- `docs/SESSION.md` & `CHANGELOG.md`: refreshed to document MCP/issue workflow and `.cursor/mcp.json` handling
+
+### Security
+
+- `.cursor/mcp.json` added to `.gitignore` — local MCP config may contain API tokens; prefer env-based or Cursor-managed secrets
 
 ### Pending (see `docs/downloaded_resource/TODO.md`)
 
-- Phase 3: Redo wrong cards
+- Phase 3: Redo wrong cards (tracked on GitHub as [#2](https://github.com/mailnivedit/u-valentindespa-flashcards-spanish/issues/2) when using issues)
 - Phase 4: Quiz (MCQ / fill-in-the-blank)
 - Phase 5: Statistics and optional persistence
 
