@@ -6,3 +6,5 @@ alwaysApply: true
 # Propose New Tests
 
 Once you are done making changes, proactively ask the user if you should also write new tests to cover a new functionality.
+
+**Where:** extend `tests/e2e.spec.ts` or add new files under `tests/`. See `docs/development-workflow.md`.

@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * Landing page: primary navigation to Study, Quiz (category pick), and Stats.
+ * Uses shared button classes from App.css for consistent styling.
+ */
 export default function Home() {
   return (
     <div style={{ padding: '2rem', textAlign: 'center' }}>

@@ -7,6 +7,8 @@ alwaysApply: true
 
 Key parts of the code must have comments explaining the "why" and "what".
 
+**Examples in this repo:** `src/pages/Study.tsx`, `src/components/Flashcard.tsx`, `src/data/flashcards.ts`, `src/App.tsx`.
+
 ## Guidelines
 
 - **Classes and Functions**: Add a brief comment describing the purpose.

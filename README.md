@@ -1,4 +1,14 @@
-# React + TypeScript + Vite
+# Spanish Flashcards (Vite + React + TypeScript)
+
+Front-end flashcard app with study mode, category selection, and Playwright E2E tests. See `docs/downloaded_resource/specification.md` and `TODO.md` for product scope.
+
+**Scripts:** `npm run dev` · `npm run build` · `npm run test:e2e` · `npm run test:e2e:ui`
+
+**Workflow:** After code changes, run `npm run test:e2e`. For new features, add or extend tests in `tests/` — see [`docs/development-workflow.md`](docs/development-workflow.md) and `.cursor/rules/`.
+
+---
+
+## React + TypeScript + Vite (template notes)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -6,3 +6,5 @@ alwaysApply: true
 # Run Tests After Changes
 
 Once you are done making changes to the codebase, run all the tests and ensure they pass.
+
+**Project command:** `npm run test:e2e` (Playwright; see `playwright.config.ts` and `docs/development-workflow.md`).
